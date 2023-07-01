@@ -3,4 +3,10 @@
     <string name="foto_perfil">foto_perfil</string>
     <string name="alex_mu_oz_vilugron">ALEX MUÑOZ VILUGRON</string>
     <string name="admin_redes_y_soporte">ADMIN. REDES Y SOPORTE</string>
+    <string name="seguna_imagen">seguna imagen</string>
+    <string name="whatsapp">whatsapp</string>
+    <string name="linkedin">linkedin</string>
+    <string name="me_puedes_contactar_por">Me puedes contactar por</string>
+    <string name="name">Name</string>
+    <string name="mensaje">mensaje</string>
 </resources>
