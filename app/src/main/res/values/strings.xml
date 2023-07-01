@@ -9,4 +9,9 @@
     <string name="me_puedes_contactar_por">Me puedes contactar por</string>
     <string name="name">Name</string>
     <string name="mensaje">mensaje</string>
+    <string name="referencia">referencia</string>
+    <string name="ir_a_whatsapp">ir a whatsapp</string>
+    <string name="ir_a_linkedin">ir a linkedin</string>
+    <string name="ir_a_gmail">ir a gmail</string>
+    <string name="puedes_contactarme_por">PUEDES CONTACTARME POR:</string>
 </resources>
