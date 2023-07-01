@@ -2,64 +2,40 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".ActivitySecond">
 
     <ImageView
-        android:id="@+id/img2"
-        android:layout_width="417dp"
-        android:layout_height="412dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLink"
-        app:srcCompat="@drawable/_herramientas_0"
-        android:contentDescription="@string/referencia"
-        tools:ignore="VisualLintBounds" />
-
-    <ImageView
         android:id="@+id/imgWath"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
         android:contentDescription="@string/ir_a_whatsapp"
         app:layout_constraintStart_toStartOf="@+id/textContacto"
-        app:layout_constraintTop_toBottomOf="@+id/textContacto"
 
+        app:layout_constraintTop_toBottomOf="@+id/textContacto"
         app:srcCompat="@drawable/whatsapp1"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imgLink"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="68dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgMail"
-        app:layout_constraintHorizontal_bias="0.985"
-        app:layout_constraintStart_toEndOf="@+id/imgWath"
-        app:layout_constraintTop_toBottomOf="@+id/textContacto"
-        app:srcCompat="@drawable/linkedin"
-        android:contentDescription="@string/ir_a_linkedin" />
-
-    <ImageView
-        android:id="@+id/imgMail"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/ir_a_linkedin"
         app:layout_constraintEnd_toEndOf="@+id/textContacto"
         app:layout_constraintTop_toBottomOf="@+id/textContacto"
-        app:srcCompat="@drawable/gmail"
-        android:contentDescription="@string/ir_a_gmail" />
+        app:srcCompat="@drawable/linkedin" />
 
     <TextView
         android:id="@+id/textContacto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="169dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="184dp"
         android:text="@string/puedes_contactarme_por"
         android:textColor="#838383"
@@ -70,5 +46,58 @@
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editMensaje"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:labelFor="@id/textMsg"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textMsg"
+        app:layout_constraintStart_toStartOf="@+id/textMsg"
+        app:layout_constraintTop_toBottomOf="@+id/textMsg"
+        tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0077B4"
+        android:text="@string/enviar"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/outline_email_24"
+        app:layout_constraintEnd_toEndOf="@+id/editMensaje"
+        app:layout_constraintStart_toStartOf="@+id/editMensaje"
+        app:layout_constraintTop_toBottomOf="@+id/editMensaje"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:text="@string/escribe_tu_mensaje"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textContacto" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="379dp"
+        android:layout_height="208dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_herramientas_0"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

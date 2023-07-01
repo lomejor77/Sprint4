@@ -14,4 +14,6 @@
     <string name="ir_a_linkedin">ir a linkedin</string>
     <string name="ir_a_gmail">ir a gmail</string>
     <string name="puedes_contactarme_por">PUEDES CONTACTARME POR:</string>
+    <string name="escribe_tu_mensaje">ESCRIBE TU MENSAJE</string>
+    <string name="enviar">Enviar</string>
 </resources>

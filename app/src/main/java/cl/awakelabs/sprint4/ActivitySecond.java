@@ -2,6 +2,7 @@ package cl.awakelabs.sprint4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -43,7 +44,31 @@ public class ActivitySecond extends AppCompatActivity {
             }
         });
 
+        binding.btnSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String mensajeText = binding.editMensaje.getText().toString();
+
+                composeEmail("lomejor77@gmail.com","Mensaje de Contacto",mensajeText);
+            }
+        });
+
     }
+
+    @SuppressLint("IntentReset")
+    private void composeEmail(String address, String subject, String mensajeText) {
+
+        Intent implicitMail = new Intent(Intent.ACTION_SEND);
+        implicitMail.setType("*/*");
+        implicitMail.setData(Uri.parse("mailto:"));
+        implicitMail.putExtra(Intent.EXTRA_EMAIL, address);
+        implicitMail.putExtra(Intent.EXTRA_SUBJECT, subject);
+        implicitMail.putExtra(Intent.EXTRA_TEXT, mensajeText);
+        startActivity(Intent.createChooser(implicitMail,"Mensaje Enviado"));
+        finish();
+
+    }
+
     //metodo para abrir app whatsapp
     private void sendWhatsapp(String message) {
         Intent sendIntent = new Intent();
