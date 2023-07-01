@@ -14,37 +14,38 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imgLink"
         app:srcCompat="@drawable/_herramientas_0"
         android:contentDescription="@string/referencia"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgWath"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginTop="68dp"
         android:contentDescription="@string/ir_a_whatsapp"
         app:layout_constraintStart_toStartOf="@+id/textContacto"
         app:layout_constraintTop_toBottomOf="@+id/textContacto"
-        app:srcCompat="@drawable/whatsapp__1_"
+
+        app:srcCompat="@drawable/whatsapp1"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgLink"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="68dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imgMail"
         app:layout_constraintHorizontal_bias="0.985"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imgWath"
         app:layout_constraintTop_toBottomOf="@+id/textContacto"
         app:srcCompat="@drawable/linkedin"
         android:contentDescription="@string/ir_a_linkedin" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgMail"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginTop="68dp"
